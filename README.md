@@ -15,8 +15,8 @@ TSParticles
 
 ## Links úteis
 
-| Dev | Design |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | |
+| Design                                                                                                      |
+| ----------------------------------------------------------------------------------------------------------- |
 | [Figma](https://www.figma.com/file/cAyzhcn3ik28YTSqdKRy11/Teste-pr%C3%A1tico-React---Kolabs?node-id=1%3A58) |
 
 | Docs                                                                            |
@@ -32,4 +32,4 @@ TSParticles
 
 ## Features
 
-**Commit** das feature utilizando [conventional commits](https://megamorf.gitlab.io/cheat-sheets/conventional-commits/)
+**Commit** das feature utilizando o padrão [conventional commits](https://megamorf.gitlab.io/cheat-sheets/conventional-commits/)
