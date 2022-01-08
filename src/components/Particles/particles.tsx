@@ -1,14 +1,9 @@
 import Particles from "react-tsparticles";
 
 
-interface PropsParticlesLoaded {
-  container: string;
-  init: string;
-  loaded: string
-}
 
 export const BackgroundParticles = () => {
-  const particlesInit = (main) => {
+  const particlesInit = (main: string) => {
     console.log(main);
 
     // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
