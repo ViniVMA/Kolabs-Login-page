@@ -66,7 +66,8 @@ export const FormContainer = styled.div`
     height: 370px;
     box-shadow: 0px 6px 10px #66009926;
     border-radius: 15px;
-    background-color: white;
+    background: linear-gradient(180deg, #ffffffbf 0%, #ffffff1a 100%);
+    backdrop-filter: blur(25px);
 `
 
 export const Submit = styled.input<ButtonProps>`
