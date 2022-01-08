@@ -26,7 +26,7 @@ export const LoginForm = () => {
             <span className="labels">SENHA</span>
             <S.Input type="password" placeholder="" {...register("Password", {required: true})} />
             {errors.Password && <span className="errorMsg">SENHA NÃO CONFERE</span>}
-            <S.Submit disabled={isValid}  type="submit"  >LOGAR</S.Submit>
+            <S.Submit disabled={!isValid}  type="submit"  >ENTRAR</S.Submit>
         </S.Form>
        
         

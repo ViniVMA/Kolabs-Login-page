@@ -8,10 +8,12 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         }
         html {
+            overflow-x: hidden;
             font-size: 62.5%;
+            max-height: 100vh;
+
         }
         html, body, #__next {
-            height: 100%;
         }
         body {
             font-family: Rajdhani, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;

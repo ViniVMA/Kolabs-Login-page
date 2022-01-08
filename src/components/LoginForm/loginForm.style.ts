@@ -10,23 +10,39 @@ export const Form = styled.form`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    
     
 
     h1 {
         font-size: 50px;
         color: #262626;
+
+    @media(max-width: 800px){
+            background: rgb(69,16,138);
+            background: linear-gradient(180deg, rgba(69,16,138,1) 16%, rgba(164,94,255,1) 66%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        }
     }
 
     span {
         font-weight: 600;
         line-height: 16px;
         letter-spacing: 1.5px;
+
+        
     }
 
     .labels {
         font-size: 10px;
         margin: 5px 0;
         color: #393939;
+        
+        @media(max-width: 800px){
+            color: #9966CC;
+        }
     }
 
     .errorMsg {
@@ -41,8 +57,8 @@ export const Form = styled.form`
 
 export const Input = styled.input`
     border: none;
-    width: 220px;
-    height: 36px;
+    width: 22.0rem;
+    height: 3.6rem;
     left: 22px;
     top: 162.56px;
     background: #773db114;
@@ -56,17 +72,17 @@ export const Input = styled.input`
 
 
 export const FormContainer = styled.div`
+    position: relative;
+    bottom: 8%;
+    grid-row: 2;
+    justify-self: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 265px;
-    height: 370px;
+    width: 26.5rem;
+    height: 37.0rem;
     box-shadow: 0px 6px 10px #66009926;
-    border-radius: 15px;
+    border-radius: 1.5rem;
     background: linear-gradient(180deg, #ffffffbf 0%, #ffffff1a 100%);
     backdrop-filter: blur(10px);
     
@@ -78,11 +94,11 @@ export const Submit = styled.button<ButtonProps>`
     font-style: normal;
     border: none;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
     color: #fff;
-    width: 220px;
-    height: 37px;
+    width: 22.0rem;
+    height: 3.7rem;
     background: linear-gradient(180deg, #45108a80 0%, #a45eff80 94.59%);  
     box-shadow: 0px -4px 6px #ffffff33, 0px 5px 10px #00000026;
     border-radius: 10px;
