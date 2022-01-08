@@ -9,9 +9,9 @@ Para iniciar um projeto na sua maquina local
 
 ## Libraries usadas
 
-React Hook Form
-StyledComponents
-TSParticles
+- React Hook Form
+- StyledComponents
+- TSParticles
 
 ## Links úteis
 
