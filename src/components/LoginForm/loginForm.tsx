@@ -11,7 +11,9 @@ type Inputs = {
 
 
 export const LoginForm = () => {
-        const { register, handleSubmit, formState: { errors, isDirty, isValid } } = useForm<Inputs>();
+        const { register, handleSubmit, formState: { errors, isDirty, isValid } } = useForm<Inputs>({
+            mode: "onChange"
+        });
         const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
         console.log(errors);
     return(
@@ -26,7 +28,7 @@ export const LoginForm = () => {
             <span className="labels">SENHA</span>
             <S.Input type="password" placeholder="" {...register("Password", {required: true})} />
             {errors.Password && <span className="errorMsg">SENHA NÃO CONFERE</span>}
-            <S.Submit disabled={!isValid}  type="submit"  >ENTRAR</S.Submit>
+            <S.Submit disabled={isValid}  type="submit"  >ENTRAR</S.Submit>
         </S.Form>
        
         
