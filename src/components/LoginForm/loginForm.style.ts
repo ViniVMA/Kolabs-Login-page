@@ -1,7 +1,5 @@
 import styled, { css } from 'styled-components'
 
-
-
 interface ButtonProps {
     disabled?: boolean | undefined;
 }
@@ -10,9 +8,6 @@ export const Form = styled.form`
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    
-    
 
     h1 {
         font-size: 50px;
@@ -49,10 +44,7 @@ export const Form = styled.form`
         color: red;
         font-size: 8px;
         color: #FF5555;
-    }
-
-    
-    
+    }    
 `
 
 export const Input = styled.input`
@@ -85,6 +77,11 @@ export const FormContainer = styled.div`
     border-radius: 1.5rem;
     background: linear-gradient(180deg, #ffffffbf 0%, #ffffff1a 100%);
     backdrop-filter: blur(10px);
+
+    a {
+        padding-top: 50px;
+        color: #660099
+    }
     
 `
 

@@ -17,7 +17,7 @@ export const LoginForm = () => {
         const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
         console.log(errors);
     return(
-
+<>
     <S.FormContainer>
         <Logo />
         <S.Form onSubmit={handleSubmit(onSubmit)}>
@@ -29,10 +29,9 @@ export const LoginForm = () => {
             <S.Input type="password" placeholder="" {...register("Password", {required: true})} />
             {errors.Password && <span className="errorMsg">SENHA NÃO CONFERE</span>}
             <S.Submit disabled={isValid}  type="submit"  >ENTRAR</S.Submit>
+            <a href="/">DON'T HAVE AN ACCOUNT?</a>
         </S.Form>
-       
-        
-        
     </S.FormContainer>
+    </>
     )
 }
